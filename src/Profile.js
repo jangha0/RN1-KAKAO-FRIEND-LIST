@@ -1,12 +1,14 @@
+import React from "react";
 import { View, Text, Image } from "react-native";
 import Margin from "./Margin";
 
 export default (props) => {
+  console.log(props.local);
   return (
     <View style={{ flexDirection: "row" }}>
       {/* <Image 
-      source={require(./aaa.png)}
-      style={{ width: 50, height: 50, borderRadius: 20 }}/> */}
+      source={require("./aaa.png")}
+       style={{ width: 50, height: 50, borderRadius: 20 }}/> */}
       <Image
         source={{ uri: props.uri }}
         style={{ width: 50, height: 50, borderRadius: 20 }}

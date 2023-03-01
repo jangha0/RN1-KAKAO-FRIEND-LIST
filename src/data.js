@@ -1,102 +1,70 @@
+import React from "react";
 /**
  * 이미지 출처: https://pixabay.com/ko/
  */
 
 export const myProfile = {
-  uri: "https://cdn.pixabay.com/photo/2022/01/11/19/43/avocado-6931344_960_720.jpg",
+  uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbLKNk4%2Fbtr1p1wQJoB%2F3nAtBtTRxWaNATykmKUq01%2Fimg.png",
+  // local: "C:UserssvwwwOneDrive문서NomadDreamRN1-KAKAO-FRIEND-LISTsrcaaa.png",
   name: "ovo.qvq",
   introduction: "세상은 넓고 하고싶은 것은 많다🎈",
 };
 
 export const friendProfiles = [
   {
-    uri: "https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg",
-    name: "김민호",
-    introduction: "Minho Kim",
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUrIIw%2Fbtr1bmbpvxX%2F3kG6knez1zOstjYv5Rwdrk%2Fimg.png",
+    name: "도리",
+    introduction: "JUST KEEP SWIMMING🎵",
   },
   {
-    uri: "https://cdn.pixabay.com/photo/2018/04/05/14/09/sunflowers-3292932__480.jpg",
-    name: "박지연",
-    introduction: "다정한 사람",
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdvpiU6%2Fbtr1yAFuvgK%2FGVKYIbNNCXj3nMZD859QyK%2Fimg.jpg",
+    name: "마이크",
+    introduction: "할 수 있다!",
   },
   {
-    uri: "https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616__480.jpg",
-    name: "한예지",
-    introduction: "인생은 실전이다",
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FWQa1t%2Fbtr1dmCaEqz%2F4uHaPUIMtdDD4dSB7TzaX1%2Fimg.png",
+    name: "설리번",
+    introduction: "",
   },
   {
-    uri: "https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072__480.jpg",
-    name: "소연이",
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbpDiNT%2Fbtr1udX8CFk%2FMGsrJammSiOkT6Gc6kAeM0%2Fimg.jpg",
+    name: "알린",
+    introduction: "whooooooh",
+  },
+  {
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FKwSpJ%2Fbtr1nEosZlL%2Fvnl82AnOqnlRYDK55xhv41%2Fimg.png",
+    name: "애리얼",
+    introduction: "🥰",
+  },
+  {
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbtzT6J%2Fbtr1dlceEap%2FgN3VLAuO5eXhOpsFVHPYy0%2Fimg.png",
+    name: "우드스탁",
+    introduction: "",
+  },
+  {
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcF9u8i%2Fbtr1udDODz2%2FFzgOrdczJGrnYhYKXayztK%2Fimg.png",
+    name: "죠르디",
+    introduction: "힘힘!!💨",
+  },
+
+  {
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdQxQU0%2Fbtr1bmoYddi%2FPirlAKgAzAekNA98GtsmxK%2Fimg.jpg",
+    name: "콘",
+    introduction: "소메",
+  },
+  {
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbWlLIh%2Fbtr1CLzXaQZ%2Fc25PYVuCbRTXsMOiqyw55k%2Fimg.jpg",
+    name: "크롱",
+    introduction: "ㅋㄹㅋㄹ♡",
+  },
+  {
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FTIBjR%2Fbtr07AOBH5y%2FMFd1K2B5NB5BFwzkWLdEh1%2Fimg.jpg",
+    name: "토토로",
+    introduction: "",
+  },
+  {
+    uri: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F77FIv%2Fbtr1dk5rboQ%2FOOtRymBy5qeyGvOptzl7q1%2Fimg.png",
+    name: "피글렛",
     introduction: "24/7",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2018/05/30/15/39/thunderstorm-3441687__480.jpg",
-    name: "민경이",
-    introduction: "",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2017/08/10/02/05/tiles-shapes-2617112_1280.jpg",
-    name: "주영",
-    introduction: "",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2016/03/09/09/30/woman-1245817__480.jpg",
-    name: "지혜",
-    introduction: "Do the Next things",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2018/01/15/22/25/gingerbread-men-3084961__480.jpg",
-    name: "한성은",
-    introduction: "헤헷",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2016/02/09/16/35/night-1189929__480.jpg",
-    name: "안다희",
-    introduction: "하면 한다",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2018/09/24/08/52/mountains-3699372__480.jpg",
-    name: "유현서",
-    introduction: "아자",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2019/03/25/22/52/poodle-4081526__480.jpg",
-    name: "박세인",
-    introduction: "우니",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2018/09/29/23/09/watermelon-3712515__480.jpg",
-    name: "배유림",
-    introduction: "신나",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2017/08/30/17/12/waffle-hearts-2697904__480.jpg",
-    name: "성지현",
-    introduction: "~off~",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2016/02/09/16/35/night-1189929__480.jpg",
-    name: "안다희",
-    introduction: "하면 한다",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2018/09/24/08/52/mountains-3699372__480.jpg",
-    name: "유현서",
-    introduction: "아자",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2019/03/25/22/52/poodle-4081526__480.jpg",
-    name: "박세인",
-    introduction: "우니",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2018/09/29/23/09/watermelon-3712515__480.jpg",
-    name: "배유림",
-    introduction: "신나",
-  },
-  {
-    uri: "https://cdn.pixabay.com/photo/2017/08/30/17/12/waffle-hearts-2697904__480.jpg",
-    name: "성지현",
-    introduction: "~off~",
   },
 ];
