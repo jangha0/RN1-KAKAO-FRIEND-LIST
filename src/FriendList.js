@@ -8,6 +8,7 @@ const bottomSpace = getBottomSpace();
 console.log("bottomSpace", bottomSpace, Platform.OS);
 
 export default (props) => {
+  if (!props.isOpened) return null;
   return (
     <ScrollView
       showsVerticalScrollIndicator={false}

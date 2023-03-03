@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
@@ -9,24 +9,26 @@ import FriendSection from "./src/FriendSection";
 import Header from "./src/Header";
 import Margin from "./src/Margin";
 import Profile from "./src/Profile";
+import TabBar from "./src/TabBar";
 // import Ass from "components/Ass";
 
 // const statusBarHeight = getStatusBarHeight(true);
 
 export default function App() {
+  const [isOpened, setIsOpened] = useState(true);
+
   const onPressArrow = () => {
-    console.log("clicked arrow");
+    setIsOpened(!isOpened);
   };
 
   return (
-    <SafeAreaProvider>
-      <SafeAreaView style={styles.container} edges={["right", "left"]}>
+    <View style={styles.container}>
+      <View style={{ flex: 1 }}>
         <Header />
-        
+
         <Margin height={10} />
 
         <Profile
-          local={myProfile.local}
           uri={myProfile.uri}
           name={myProfile.name}
           introduction={myProfile.introduction}
@@ -41,11 +43,14 @@ export default function App() {
         <FriendSection
           friendProfileLen={friendProfiles.length}
           onPressArrow={onPressArrow}
+          isOpened={isOpened}
         />
 
-        {/* <FriendList data={friendProfiles} /> */}
-      </SafeAreaView>
-    </SafeAreaProvider>
+        <FriendList data={friendProfiles} isOpened={isOpened} />
+      </View>
+
+      <TabBar />
+    </View>
   );
 }
 
