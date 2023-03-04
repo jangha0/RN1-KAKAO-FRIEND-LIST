@@ -16,6 +16,7 @@ import TabBar from "./src/TabBar";
 
 export default function App() {
   const [isOpened, setIsOpened] = useState(true);
+  const [selectedTabIdx, setSelectedTabIdx] = useState(0);
 
   const onPressArrow = () => {
     setIsOpened(!isOpened);
@@ -23,7 +24,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, paddingHorizontal: 15 }}>
         <Header />
 
         <Margin height={10} />
@@ -49,7 +50,10 @@ export default function App() {
         <FriendList data={friendProfiles} isOpened={isOpened} />
       </View>
 
-      <TabBar />
+      <TabBar
+        selectedTabIdx={selectedTabIdx}
+        setSelectedTabIdx={setSelectedTabIdx}
+      />
     </View>
   );
 }
@@ -58,8 +62,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 20,
-    // paddingTop: statusBarHeight,
     backgroundColor: "#fff",
-    paddingHorizontal: 15,
   },
 });
