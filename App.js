@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { StatusBar } from "expo-status-bar";
-import { Platform, StyleSheet, Text, View } from "react-native";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet, View } from "react-native";
 import { friendProfiles, myProfile } from "./src/data";
 import Division from "./src/Division";
 import FriendList from "./src/FriendList";
@@ -10,9 +8,6 @@ import Header from "./src/Header";
 import Margin from "./src/Margin";
 import Profile from "./src/Profile";
 import TabBar from "./src/TabBar";
-// import Ass from "components/Ass";
-
-// const statusBarHeight = getStatusBarHeight(true);
 
 export default function App() {
   const [isOpened, setIsOpened] = useState(true);
