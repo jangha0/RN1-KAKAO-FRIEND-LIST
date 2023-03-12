@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FlatList, StyleSheet, View } from "react-native";
 import { friendProfiles, myProfile } from "./src/data";
 import Division from "./src/Division";
-import FriendList from "./src/FriendList";
 import FriendSection from "./src/FriendSection";
 import Header from "./src/Header";
 import Margin from "./src/Margin";
